@@ -57,7 +57,7 @@ const Products = () => {
     if (fetchStatus === "idle") {
       dispatch(fetchProducts());
     }
-  }, [dispatch]);
+  }, [dispatch, fetchStatus]);
 
   const selectChangeHandler = e => {
     setSelectFilter(e.target.value);

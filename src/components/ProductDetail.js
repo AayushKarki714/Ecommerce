@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
@@ -6,14 +6,9 @@ import {
   fetchSingleProduct,
   removeData,
 } from "../reducer/features/single-productSlice";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
 import { useSelector } from "react-redux";
 import Spinner from "./Spinner";
-import {
-  addItemToCart,
-  removeItemToCart,
-} from "../reducer/features/cart-slice";
+import { addItemToCart } from "../reducer/features/cart-slice";
 
 const Container = styled.div``;
 
